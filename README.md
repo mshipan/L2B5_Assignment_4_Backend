@@ -63,8 +63,7 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/library-management-system.git
-cd server
+git clone https://github.com/mshipan/L2B5_Assignment_4_Backend.git
 ```
 
 ### 2. Install Dependencies
