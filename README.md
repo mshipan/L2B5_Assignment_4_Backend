@@ -121,8 +121,8 @@ A centralized `globalErrorHandler.ts` is used to catch and format all thrown err
 
 ## Live Deployment
 
-- **Frontend:** [https://your-frontend.vercel.app](#)
-- **Backend:** [https://your-backend-api.onrender.com](#)
+- **Frontend:** [https://lmsys-client.vercel.app](#)
+- **Backend:** [https://lmsys-server.vercel.app](#)
 
 ---
 

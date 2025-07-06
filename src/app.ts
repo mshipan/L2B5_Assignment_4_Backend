@@ -9,16 +9,26 @@ const app: Application = express();
 dotenv.config();
 
 const corsConfig = {
-  origin: ["http://localhost:5173", "http://localhost:5174", "*"],
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://lmsys-client.vercel.app",
+    "http://lmsys-client.vercel.app",
+    "https://www.lmsys-client.vercel.app",
+    "http://www.lmsys-client.vercel.app",
+    "www.lmsys-client.vercel.app",
+    "lmsys-client.vercel.app",
+    "*",
+  ],
   credentials: true,
   optionSuccessStatus: 200,
   methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
 };
 
 // Middlewares
+app.use(express.json());
 app.use(cors(corsConfig));
 app.options("", cors(corsConfig));
-app.use(express.json());
 
 // Root Route
 app.get("/", (req: Request, res: Response) => {
